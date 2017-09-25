@@ -7,11 +7,18 @@ console.log(userFirstName);
 var userLastName = prompt("What is your last name?");
 alert("Your last name is " + userLastName);
 
-// Asks for age and alerts correct response
+// Asks for age and alerts confim of correct response
+var userBirthday = prompt("When is your birthday?");
 var ageResponse;
-var confirmation = confirm("Press okay if you are at least 21 years of age.");
+var confirmation = confirm("Press okay if your birthday is on " + userBirthday + ". Press cancel if your birthday is incorrect");
 if (confirmation == true) {
-    ageResponse = alert("You are at least 21 years of age as of " + Date());
+    ageResponse = alert("Your birthday is on " + userBirthday + ".");
 } else {
-    ageResponse = alert("As of, " + Date() + " you are not 21 years of age");
+    var userBirthday = prompt("When is your birthday?");
+    var confirmation = confirm("Press okay if your birthday is on " + userBirthday + ". Press cancel if your birthday is incorrect");
+    if (confirmation == true) {
+        ageResponse = alert("Your birthday is on " + userBirthday + ".");
+    } else {
+      ageResponse = alert("Please reload the page and try again.");
+    }
 }
