@@ -5,7 +5,7 @@ console.log(userFirstName);
 
 // Asks for user's last name and alerts it
 var userLastName = prompt("What is your last name?");
-alert("Your last name is " + userLastName);
+alert("Your last name is " + userLastName + ".");
 
 // Asks for age and alerts confim of correct  response
 var userBirthday = prompt("When is your birthday?");
