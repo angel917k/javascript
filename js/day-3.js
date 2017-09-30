@@ -1,4 +1,3 @@
-
 // promps user for name
 var userName = prompt("Hello there, what is your name?");
 
