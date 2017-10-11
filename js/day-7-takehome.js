@@ -18,9 +18,8 @@ function welcomePrompt (){
   var color = prompt("What is you favorite color?");
   if( color === "red" || color === "green" || color === "blue" || color === "white" || color === "black" || color === "orange" || color === "pink" || color === "purple" || color === "yellow" || color === "grey"){
   body.style.backgroundColor = color;
-  alert("Your favorite color is boring Maritza...stupid girl.")
 } else {
-  alert("Your favorite color is not available as a background color. It will be set to turquoise instead. Deal with it Maritza...stupid girl.")
+  alert("Your favorite color is not available as a background color. It will be set to turquoise instead. Deal with it.")
   body.style.backgroundColor = "#69E1DF";
 }
 
