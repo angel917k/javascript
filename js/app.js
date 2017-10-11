@@ -22,9 +22,3 @@ if (confirmation == true) {
       ageResponse = alert("Please reload the page and try again.");
     }
 }
-
-/* method presented in class
-var birthday = prompt ("Please provide your birthday.", "4/13/1993");
-birthday = new Date(birthday);
-alert(birthday);
-*/
