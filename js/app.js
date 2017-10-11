@@ -23,7 +23,7 @@ if (confirmation == true) {
     }
 }
 
-/* method presented in class 
+/* method presented in class
 var birthday = prompt ("Please provide your birthday.", "4/13/1993");
 birthday = new Date(birthday);
 alert(birthday);
