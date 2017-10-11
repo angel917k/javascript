@@ -5,7 +5,7 @@ function welcomePrompt (){
   var titlePrompt = prompt("Please enter a title for your page");
 
   var  title = document.createElement('h1');
-  title.className = "text-center"
+  title.className = "text-center";
   title.textContent = titlePrompt;
   body.appendChild(title);
 
@@ -15,7 +15,14 @@ function welcomePrompt (){
   story.textContent = storyPrompt;
   body.appendChild(story);
 
-  var colorPrompt = prompt("What is you favorite color");
+  var color = prompt("What is you favorite color?");
+  if( color === "red" || color === "green" || color === "blue" || color === "white" || color === "black" || color === "orange" || color === "pink" || color === "purple" || color === "yellow" || color === "grey"){
+  body.style.backgroundColor = color;
+  alert("Your favorite color is boring Maritza...stupid girl.")
+} else {
+  alert("Your favorite color is not available as a background color. It will be set to turquoise intstead. Deal with it Maritza...stupid girl.")
+  body.style.backgroundColor = "#69E1DF";
+}
 
 };
 
